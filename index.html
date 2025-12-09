@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>João Ricardo Leitão Barros — Portfólio</title>
+  <meta name="description" content="Portfólio de João Ricardo Leitão Barros — Desenvolvedor de Software, Embarcados, IoT e Machine Learning">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#98a8b9; --glass: rgba(255,255,255,0.03);
+      --maxw:1100px; --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,#071028 0%,var(--bg) 100%); color:#e6eef6; -webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--maxw); margin:36px auto; padding:28px}
+    header{display:flex;align-items:center;gap:20px}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#8b5cf6);display:flex;align-items:center;justify-content:center;font-weight:700;color:#041027;font-size:26px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    nav{margin-left:auto}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:26px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .buttons{display:flex;gap:10px;margin-top:14px}
+    .btn{padding:10px 14px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);color:var(--accent);text-decoration:none;font-weight:600}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    section{margin-top:22px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .project h4{margin:0 0 6px}
+    .small{font-size:13px;color:var(--muted)}
+    ul.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:8px 0;list-style:none}
+    ul.skills li{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600;font-size:13px}
+    footer{margin:36px 0 80px;color:var(--muted);text-align:center}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.avatar{width:80px;height:80px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:14px">
+        <div class="avatar">JR</div>
+        <div>
+          <h1>João Ricardo Leitão Barros</h1>
+          <p class="lead">Desenvolvedor de Software • Embarcados • IoT • Machine Learning</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div>
+        <div class="card">
+          <h2>Sobre mim</h2>
+          <p>Sou estudante de Ciência da Computação na CESAR School e engenheiro de software com foco em sistemas embarcados (ESP32 / Arduino), desenvolvimento web e análise de dados. Tenho experiência em C, C++, Java, JavaScript, Python e ferramentas como Git e Linux. Busco oportunidades em desenvolvimento embarcado, IoT e projetos de dados.</p>
+          <div class="buttons">
+            <a class="btn" href="/CV - Joao Ricado Leitao Barros (2025).pdf" download>Baixar CV (PDF)</a>
+            <a class="btn" href="#projetos">Ver Projetos</a>
+            <a class="btn" href="#contato">Entrar em contato</a>
+          </div>
+        </div>
+
+        <section id="projetos">
+          <h3>Projetos</h3>
+          <div class="projects">
+            <article class="project">
+              <h4>DrinkMaker — Máquina de drinks</h4>
+              <p class="small">STM32, ESP32, Arduino, Firebase — Liderança e arquitetura IoT</p>
+              <p>Máquina inteligente para preparação de drinks com integração em cloud e controle por microcontroladores.</p>
+              <p class="small">Mais: <a href="https://www.hackster.io/the-bartenders/drinkmaker-a2e0df" target="_blank">Hackster</a></p>
+            </article>
+
+            <article class="project">
+              <h4>RPG Lite</h4>
+              <p class="small">C — Jogo em linha de comando com sistema de save</p>
+              <p>Jogo inspirado em RPGs antigos para terminal, com sistema de persistência de progresso.</p>
+              <p class="small">Código: <a href="https://github.com/Trutzys/game_jrlb/tree/main" target="_blank">github.com/Trutzys/game_jrlb</a></p>
+            </article>
+
+            <article class="project">
+              <h4>Projeto AACD</h4>
+              <p class="small">Arduino, Python — Sistema de rastreamento de cofres</p>
+              <p>Solução para rastreamento e organização de doações com integração a arquivos XLSX.</p>
+              <p class="small">Código: <a href="https://github.com/Trutzys/projeto_aacd/tree/main" target="_blank">github.com/Trutzys/projeto_aacd</a></p>
+            </article>
+
+            <article class="project">
+              <h4>Análise do SDG Index</h4>
+              <p class="small">Python, Pandas, Matplotlib — Análise estatística</p>
+              <p>Exploração de dados com visualizações, normalização e identificação de padrões.</p>
+              <p class="small">Código: <a href="https://github.com/Trutzys/analise_estatistica" target="_blank">github.com/Trutzys/analise_estatistica</a></p>
+            </article>
+
+            <article class="project">
+              <h4>Análise (Máquina de Aprendizado) — Sífilis Congênita</h4>
+              <p class="small">Random Forest, XGBoost — Classificação & Regressão</p>
+              <p>Projeto de disciplina aplicando modelos de ML para classificação e análise de risco.</p>
+              <p class="small">Código: <a href="https://github.com/Trutzyz/AnaliseSiflisCongenita" target="_blank">github.com/Trutzyz/AnaliseSiflisCongenita</a></p>
+            </article>
+          </div>
+        </section>
+
+        <section id="experiencia">
+          <h3>Experiência</h3>
+          <div class="card grid-2" style="margin-top:10px">
+            <div>
+              <h4>Tron Soluções Tecnológicas</h4>
+              <p class="small">Estagiário (Jun 2024 - Dez 2025) • Júnior (Dez 2025 - Presente)</p>
+              <ul>
+                <li>Desenvolvimento de software embarcado (ESP32 / Arduino)</li>
+                <li>Desenvolvimento web e manutenção</li>
+                <li>Ambiente Linux, IoT, C/C++, HTML, CSS, JavaScript</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Monitor — Teoria da Computação</h4>
+              <p class="small">CESAR School (Fev 2024 - Jun 2024)</p>
+              <ul>
+                <li>Apoio acadêmico em Autômatos e Máquinas de Turing</li>
+                <li>Correção de atividades e mediação de debates</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="educacao">
+          <h3>Formação</h3>
+          <div class="card" style="margin-top:10px">
+            <p><strong>CESAR School</strong> — Bacharelado em Ciência da Computação (2019 - Presente)</p>
+            <p><strong>CCAA</strong> — Curso de Inglês (2009 - 2013)</p>
+          </div>
+        </section>
+
+        <section id="skills">
+          <h3>Habilidades</h3>
+          <ul class="skills">
+            <li>C</li><li>C++</li><li>Python</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
+            <li>ESP32</li><li>Arduino</li><li>STM32</li><li>Firebase</li><li>Git</li><li>Linux</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Contato</h3>
+          <p class="small">Email: joaorecardoleitao@gmail.com</p>
+          <p class="small">GitHub: <a href="https://github.com/Trutzys" target="_blank">github.com/Trutzys</a></p>
+          <p class="small">LinkedIn: <a href="https://www.linkedin.com/in/jo%C3%A3o-ricardo-leit%C3%A3o-barros-892096251" target="_blank">Perfil</a></p>
+
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+          <h4>Download</h4>
+          <p class="small">Você pode substituir este arquivo pelo seu CV atualizado.</p>
+          <a class="btn" href="/CV - Joao Ricado Leitao Barros (2025).pdf" download style="display:inline-block;margin-top:8px">Baixar CV</a>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Extras</h4>
+          <p class="small">Sugestões: adicionar imagens dos projetos, screenshots e links para demos (se houver).</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>© João Ricardo Leitão Barros — Desenvolvedor | CESAR School</p>
+    </footer>
+  </div>
+</body>
+</html>
